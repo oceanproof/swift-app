@@ -34,16 +34,41 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T8e-eQ-M2Q"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ggR-fD-5p9">
+                                <rect key="frame" x="137.5" y="153" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2Z9-qj-alE"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qAp-Cg-6Ff">
+                                <rect key="frame" x="137.5" y="200" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="35O-oh-gIG"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bYQ-W0-93P" firstAttribute="top" secondItem="VTQ-0w-aDM" secondAttribute="bottom" constant="9" id="Av8-mp-wNK"/>
+                            <constraint firstItem="ggR-fD-5p9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IL2-P0-fNA"/>
+                            <constraint firstItem="ggR-fD-5p9" firstAttribute="top" secondItem="bYQ-W0-93P" secondAttribute="bottom" constant="23" id="PTg-Fk-brK"/>
+                            <constraint firstItem="ggR-fD-5p9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Scj-dQ-OhY"/>
                             <constraint firstItem="bYQ-W0-93P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T1o-hp-D6K"/>
+                            <constraint firstItem="qAp-Cg-6Ff" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W9G-A1-LhX"/>
                             <constraint firstItem="VTQ-0w-aDM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Ypi-j1-7gO"/>
                             <constraint firstItem="VTQ-0w-aDM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="apn-VH-gdb"/>
+                            <constraint firstItem="qAp-Cg-6Ff" firstAttribute="top" secondItem="ggR-fD-5p9" secondAttribute="bottom" constant="17" id="v1w-xw-39B"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="ggR-fD-5p9" id="Qbh-Rn-XFi"/>
+                        <outlet property="text2" destination="qAp-Cg-6Ff" id="Ict-YX-YJN"/>
                         <outlet property="theLabel" destination="VTQ-0w-aDM" id="dEh-rD-cdT"/>
                     </connections>
                 </viewController>
