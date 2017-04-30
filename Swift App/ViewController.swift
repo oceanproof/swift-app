@@ -21,7 +21,8 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        var addition = true
+        let addition = true
+        
         
         
         
